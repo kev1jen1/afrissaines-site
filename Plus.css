@@ -3,21 +3,30 @@
 }
 
 header {
-	background-color : lightgrey;
+	background-color : white;
 	display : flex;
+	padding: 35px 5%;
 }
 
 nav {
 	text-align : center;
 	margin-left : 30px;
 	margin-top : 15px;
+	justify-content: center;    
+	position: relative;
 }
 
 nav a {
-	margin-left : 20px;
-	margin-right : 20px;
+	gap : 30px;
 	text-decoration : none;
 	color : black;
+}
+
+body {
+	background-image: url("./image001.jpg") ;
+	background-size: cover;
+	margin: 0;
+	font-family: Arial, sans-serif;
 }
 
 h1 {
