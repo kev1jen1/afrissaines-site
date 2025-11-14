@@ -31,6 +31,10 @@ header img{
     line-height: 1;
 }
 
+nav {
+    align-items: center;
+}
+
 nav a {
     text-decoration: none;
     color: black;
