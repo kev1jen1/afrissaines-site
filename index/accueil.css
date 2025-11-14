@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url("../catalogue/bissap.png");
+    background-size: cover;
+    margin: 0;
+}
+
+/* --- Header --- */
+header {
+    position: relative;      /* Permet au nav d'être centré indépendamment */
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    font-size: 1.1em;
+}
+
+/* Logo collé à gauche */
+.logo img {
+    height: 60px;
+    width: 249px;
+    display: block;
+}
+
+/* Nav centré par rapport à son propre centre */
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centre parfait */
+    display: flex;
+}
+
+/* Liens */
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
