@@ -17,6 +17,11 @@ nav {
 	position: relative;         
 }
 
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
 .logo {
 	height: 60px;
 	width: auto;
