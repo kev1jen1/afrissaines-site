@@ -1,37 +1,11 @@
-#logo {
-	width : 200px;
-}
-
-header {
-	background-color : white;
-	display : flex;
-	padding: 35px 5%;
-}
-
-nav {
-	text-align : center;
-	margin-left : 30px;
-	margin-top : 15px;
-	justify-content: center;    
-	position: relative;
-}
-
-nav a {
-	gap : 30px;
-	text-decoration : none;
-	color : black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: Arial, sans-serif;
-}
-
-h1 {
-	text-decoration : underline;
-	text-align : center;
-}
-
-footer {
-	text-align : center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
 }
