@@ -7,30 +7,28 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
+    background-color: white;
 }
 
 header {
-    position: relative; 
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
     border-bottom: 1px solid #eee;
     background-color: #fff;
     font-size: 1.1em;
 }
-
-.logo img {
+header img{
     height: 60px;
     width: 249px;
-    display: block;
+
 }
 
-nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); 
+.logo {
     display: flex;
+    flex-direction: column;
+    line-height: 1;
 }
 
 nav a {
@@ -44,4 +42,18 @@ nav a {
 nav a.active {
     font-weight: bold;
     border-bottom: 2px solid black;
+}
+
+main {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: "Noto Sans Tifinagh Rhissa Ixa";
+
+}
+
+main h2 {
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 40px;
+    color: black;
 }
