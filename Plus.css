@@ -24,13 +24,6 @@ header img{
     width: 249px;
 }
 
-nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* Centre parfait */
-    display: flex;
-}
-
 .logo {
     display: flex;
     flex-direction: column;
