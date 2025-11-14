@@ -20,7 +20,7 @@ header {
     font-size: 1.1em;
 }
 
-.logo {
+header img {
     height: 60px;
     width: 249px;
     display: block;
