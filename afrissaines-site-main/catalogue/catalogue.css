@@ -1,0 +1,159 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+}
+
+/* --- Header / Barre de navigation --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    font-size: 1.1em;
+}
+header img{
+    height: 60px;
+    width: 249px;
+
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.boutton-devis {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius:6px;
+}
+
+main {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: "Noto Sans Tifinagh Rhissa Ixa";
+
+}
+
+main h2 {
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 40px;
+    color: black;
+}
+.produis-carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 15px green;
+    border-radius: 10px;
+}
+
+/* Product Image Styling */
+.produis-image {
+    flex-basis: 40%;
+    max-width: 350px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.produis-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.produis-details {
+    flex-basis: 60%;
+    text-align: left;
+}
+
+.produis-type {
+    font-size: 0.9em;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.produis-details h3 {
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.produis-details ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.produis-details li {
+    font-size: 1em;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.produis-description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.produis-details li::before {
+    content: "●";
+    color: black;
+    font-size: 0.8em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bouton-catalogue {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+    border-radius:6px;
+    box-shadow: 0 4px 15px orange;
+}
