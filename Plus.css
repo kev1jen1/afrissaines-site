@@ -48,17 +48,6 @@ nav a.active {
     border-bottom: 2px solid black;
 }
 
-.boutton-devis {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 0.9em;
-    border-radius:6px;
-}
-
 main {
     text-align: center;
     padding: 40px 20px;
