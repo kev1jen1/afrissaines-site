@@ -27,18 +27,11 @@ nav a.active {
 	align-items: center;        
 }
 
-.nav-links {
+nav a {
 	display: flex;
-	gap: 30px;                  
-}
-
-.nav-links a {
+	gap: 30px; 
 	color: black;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 16px;
-}
-
-.nav-links a:hover {
-	color: #ff6600;
 }
