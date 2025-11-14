@@ -12,7 +12,6 @@ body {
     background-color: white;
 }
 
-/* --- Header / Barre de navigation --- */
 header {
     display: flex;
     justify-content: space-between;
@@ -28,7 +27,6 @@ header img{
 
 }
 
-/* Logo Styling */
 .logo {
     display: flex;
     flex-direction: column;
@@ -88,7 +86,6 @@ main h2 {
     border-radius: 10px;
 }
 
-/* Product Image Styling */
 .produis-image {
     flex-basis: 40%;
     max-width: 350px;
