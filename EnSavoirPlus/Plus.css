@@ -1,1 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    font-size: 1.1em;
+}
+header img{
+    height: 60px;
+    width: 249px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+main {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: "Noto Sans Tifinagh Rhissa Ixa";
+
+}
+
+main h2 {
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 40px;
+    color: black;
+}
