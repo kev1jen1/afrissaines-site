@@ -13,6 +13,7 @@ body {
 }
 
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,17 +25,21 @@ header {
 header img{
     height: 60px;
     width: 249px;
-
+    flex: 5;
 }
 
 .logo {
-    display: flex;
     flex-direction: column;
     line-height: 1;
 }
 
-
-
+nav {
+    display: flex;
+    position: absolute;
+    left: 30%;
+    gap: 20px;
+    flex: 5;
+}
 
 nav a {
     text-decoration: none;
@@ -49,7 +54,9 @@ nav a.active {
     border-bottom: 2px solid black;
 }
 
-.boutton-devis {
+.panier {
+    position: absolute;
+    right: 5%;
     background-color: black;
     color: white;
     border: none;
@@ -58,6 +65,7 @@ nav a.active {
     cursor: pointer;
     font-size: 0.9em;
     border-radius:6px;
+    flex: 1;
 }
 
 main {
