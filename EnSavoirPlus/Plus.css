@@ -11,6 +11,7 @@ body {
 }
 
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,12 +23,20 @@ header {
 header img{
     height: 60px;
     width: 249px;
+    flex: 5;
 }
 
 .logo {
-    display: flex;
     flex-direction: column;
     line-height: 1;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    left: 30%;
+    gap: 20px;
+    flex: 5;
 }
 
 nav a {
@@ -41,6 +50,20 @@ nav a {
 nav a.active {
     font-weight: bold;
     border-bottom: 2px solid black;
+}
+
+.panier {
+    position: absolute;
+    right: 5%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius:6px;
+    flex: 1;
 }
 
 main {
