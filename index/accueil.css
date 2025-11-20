@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url("./image001.jpg");
+    background-image: url("../catalogue/jusdegingembre.jpg");
     background-size: cover;
     margin: 0;
 }
@@ -50,4 +50,33 @@ nav a {
 nav a.active {
     font-weight: bold;
     border-bottom: 2px solid black;
+}
+main {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: "Noto Sans Tifinagh Rhissa Ixa";
+    font-size: 40px;
+
+}
+main img{
+    height: 180px;
+    width: 747px;
+}
+
+div.untruc {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+.bouton-catalogue {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+    border-radius:6px;
+    box-shadow: 0 4px 15px orange;
+
 }
