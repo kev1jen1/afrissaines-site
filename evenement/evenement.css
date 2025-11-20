@@ -1,18 +1,7 @@
+/* Fichier: evenements.css */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: white;
-}
-
+/* --- Style général pour le Header et le Main (à adapter si nécessaire) --- */
 header {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,27 +10,31 @@ header {
     background-color: #fff;
     font-size: 1.1em;
 }
+header nav {
+    flex-grow: 1; /* Permet à la nav de prendre tout l'espace restant entre le logo et le bouton */
+    text-align: center; /* Centre le texte (les liens) à l'intérieur de la nav */
+    margin: 0 20px; /* Ajout d'une petite marge pour ne pas coller au logo/bouton */
+}
 header img{
     height: 60px;
     width: 249px;
-    flex: 5;
 
 }
 
-.logo {
-    flex-direction: column;
-    line-height: 1;
-}
-
-nav {
+/* Ajuster le bouton "Mes réservations" dans le header */
+header .bouton-reservations {
+    /* Reprendre les styles du bouton FARE UN DEVIS */
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    /* Assurer que le bouton soit bien aligné dans le header */
     display: flex;
-    position: absolute;
-    left: 30%;
-    gap: 20px;
-    flex: 5;
+    align-items: center;
+    margin-left: auto; /* Pousser le bouton à droite */
 }
-
-
 nav a {
     text-decoration: none;
     color: black;
@@ -55,29 +48,132 @@ nav a.active {
     border-bottom: 2px solid black;
 }
 
-.panier {
+main {
+    padding: 40px 20px;
+    max-width: 1000px; /* Limiter la largeur comme pour votre catalogue */
+    margin: 0 auto;
+    font-family: "Noto Sans Tifinagh Rhissa Ixa";
+
+}
+
+/* Style du titre H2 "Evenements" */
+main h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --- Style des cartes d'événements --- */
+
+.evenement-carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 15px green;
+    border-radius: 10px;
+}
+
+.evenement-details {
+    flex-grow: 1;
+}
+
+.evenement-date-heure {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+    /* Le petit point à gauche de la date sur la maquette */
+    position: relative;
+    padding-left: 15px;
+}
+
+.evenement-date-heure::before {
+    content: "•"; /* Utiliser un point ou une petite icône */
+    color: green; /* Couleur du point dans la maquette */
+    font-size: 1.5em;
+    line-height: 0;
     position: absolute;
-    right: 5%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.evenement-action {
+    box-shadow: 0 4px 15px orange;
+
+}
+.evenement-details h3 {
+    font-size: 1.5em;
+    margin: 0 0 15px 0;
+    font-weight: normal; /* Les titres semblent moins gras sur la maquette */
+}
+
+.evenement-lieu-places {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.evenement-lieu-places .lieu {
+    color: green; /* Le texte Lieu à définir semble vert sur la maquette */
+}
+
+.evenement-lieu-places i {
+    margin-right: 5px;
+    color: #888; /* Couleur des icônes */
+}
+
+/* --- Barre de progression --- */
+.progression-barre {
+    height: 6px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 350px; /* Limiter la longueur de la barre si besoin */
+}
+
+.progression-remplissage {
+    height: 100%;
+    background-color: green;
+    border-radius: 3px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Pour le cas où l'événement est complet */
+.progression-remplissage.complet {
+    background-color: #888; /* Optionnel : changer la couleur si complet */
+}
+
+/* --- Bouton S'inscrire --- */
+.evenement-action {
+    margin-left: 30px;
+}
+.boutonsinscriredesactive:not(.bouton-sinscrire) {
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.2s;
+    box-shadow: none;
+    background-color: #888;
+    cursor: not-allowed;
+}
+.bouton-sinscrire {
     background-color: black;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 0.9em;
-    border-radius:6px;
-    flex: 1;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 15px orange;
 }
 
-main {
-    text-align: center;
-    padding: 40px 20px;
-    font-family: "Noto Sans Tifinagh Rhissa Ixa";
-}
-
-main h2 {
-    font-size: 3em;
-    font-weight: normal;
-    margin-bottom: 40px;
-    color: black;
-}
