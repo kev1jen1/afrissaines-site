@@ -1,40 +1,44 @@
-/* Fichier: evenements.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* --- Style général pour le Header et le Main (à adapter si nécessaire) --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url("../catalogue/jusdegingembre.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+/* --- Header --- */
 header {
+    position: relative;      /* Permet au nav d'être centré indépendamment */
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
     border-bottom: 1px solid #eee;
     background-color: #fff;
     font-size: 1.1em;
 }
-header nav {
-    flex-grow: 1; /* Permet à la nav de prendre tout l'espace restant entre le logo et le bouton */
-    text-align: center; /* Centre le texte (les liens) à l'intérieur de la nav */
-    margin: 0 20px; /* Ajout d'une petite marge pour ne pas coller au logo/bouton */
-}
-header img{
+
+/* Logo collé à gauche */
+.logo img {
     height: 60px;
     width: 249px;
-
+    display: block;
 }
 
-/* Ajuster le bouton "Mes réservations" dans le header */
-header .bouton-reservations {
-    /* Reprendre les styles du bouton FARE UN DEVIS */
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    /* Assurer que le bouton soit bien aligné dans le header */
+/* Nav centré par rapport à son propre centre */
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centre parfait */
     display: flex;
-    align-items: center;
-    margin-left: auto; /* Pousser le bouton à droite */
 }
+
+/* Liens */
 nav a {
     text-decoration: none;
     color: black;
@@ -47,21 +51,16 @@ nav a.active {
     font-weight: bold;
     border-bottom: 2px solid black;
 }
-
 main {
+    text-align: center;
     padding: 40px 20px;
-    max-width: 1000px; /* Limiter la largeur comme pour votre catalogue */
-    margin: 0 auto;
     font-family: "Noto Sans Tifinagh Rhissa Ixa";
+    font-size: 40px;
 
 }
-
-/* Style du titre H2 "Evenements" */
-main h2 {
-    font-size: 2.5em;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 30px;
+main img{
+    height: 180px;
+    width: 747px;
 }
 
 /* --- Style des cartes d'événements --- */
