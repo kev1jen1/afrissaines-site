@@ -67,6 +67,30 @@ div.untruc {
     background-color: #F2F2F2;
     border-radius: 20px;
 }
+div.catalogue{
+    width: 100%;
+    overflow: hidden;
+}
+div.slider img{
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+div.slider{
+    display: flex;
+    width: calc(200px * 10); /* largeur = taille image × (nb images × 2) */
+    animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 .bouton-catalogue {
     display: inline-block;
     background-color: black;
