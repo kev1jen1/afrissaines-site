@@ -14,7 +14,6 @@ body {
 header {
     position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
     border-bottom: 1px solid #eee;
@@ -25,7 +24,7 @@ header {
 header img{
     height: 60px;
     width: 249px;
-    flex: 5;
+    display: block;
 }
 
 .logo {
@@ -34,11 +33,10 @@ header img{
 }
 
 nav {
+    position: sticky;
+    left: 50%;
+    transform: translateX(-50%); /* Centre parfait */
     display: flex;
-    position: absolute;
-    left: 30%;
-    gap: 20px;
-    flex: 5;
 }
 
 
@@ -56,21 +54,6 @@ nav a.active {
     border-bottom: 2px solid black;
 }
 
-
-.panier {
-    position: absolute;
-    right: 5%;
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 0.9em;
-    border-radius:6px;
-    flex: 1;
-}
-
 main {
     padding: 40px 20px;
     font-family: "Noto Sans Tifinagh Rhissa Ixa";
@@ -84,6 +67,14 @@ main h2 {
     color: black;
 }
 
+ .h3 {
+     text-align: center;
+     font-size: 2em;
+     font-weight: normal;
+     margin-top: 70px;
+     margin-bottom: 60px;
+     color: black;
+ }
 
 .contenu {
 	margin-top: 100px;
@@ -91,26 +82,32 @@ main h2 {
 }
 
 .contenu img{
-	margin-top: 100px;
 	width: 500px; 
 	align-items: center;
 }
 
-.texte {
-	font-size: 18px;
-}
+ .texte {
+     font-size: 18px;
+ }
+
+ .gauche{
+     text-align: left;
+     padding-left: 450px;
+     padding-top: 10px;
+ }
 
 .ligne {
-	font-size: 17px;
 	margin-top: 20px;
 }
 
 .bouton-catalogue {
+    text-align: left;
+    width: 500px;
     display: inline-block;
     background-color: black;
     color: white;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 15px 50px;
     font-size: 1em;
     letter-spacing: 0.5px;
     transition: background-color 0.3s;
@@ -118,6 +115,7 @@ main h2 {
     box-shadow: 0 4px 15px orange;
 
 }
+
 
 
 
