@@ -48,7 +48,6 @@ nav a {
     transition: color 0.3s;
 }
 
-
 nav a.active {
     font-weight: bold;
     border-bottom: 2px solid black;
@@ -98,6 +97,8 @@ main h2 {
 
 .ligne {
 	margin-top: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
 .bouton-catalogue {
