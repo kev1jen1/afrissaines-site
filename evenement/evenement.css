@@ -2,39 +2,31 @@
 
 /* --- Style général pour le Header et le Main (à adapter si nécessaire) --- */
 header {
+    position: relative;      /* Permet au nav d'être centré indépendamment */
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
     border-bottom: 1px solid #eee;
     background-color: #fff;
     font-size: 1.1em;
 }
-header nav {
-    flex-grow: 1; /* Permet à la nav de prendre tout l'espace restant entre le logo et le bouton */
-    text-align: center; /* Centre le texte (les liens) à l'intérieur de la nav */
-    margin: 0 20px; /* Ajout d'une petite marge pour ne pas coller au logo/bouton */
-}
-header img{
+
+/* Logo collé à gauche */
+.logo img {
     height: 60px;
     width: 249px;
-
+    display: block;
 }
 
-/* Ajuster le bouton "Mes réservations" dans le header */
-header .bouton-reservations {
-    /* Reprendre les styles du bouton FARE UN DEVIS */
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    /* Assurer que le bouton soit bien aligné dans le header */
+/* Nav centré par rapport à son propre centre */
+nav {
+    position: sticky;
+    left: 50%;
+    transform: translateX(-50%); /* Centre parfait */
     display: flex;
-    align-items: center;
-    margin-left: auto; /* Pousser le bouton à droite */
 }
+
+/* Liens */
 nav a {
     text-decoration: none;
     color: black;
