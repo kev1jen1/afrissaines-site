@@ -32,7 +32,7 @@ header {
 
 /* Nav centré par rapport à son propre centre */
 nav {
-    position: absolute;
+    position: sticky;
     left: 50%;
     transform: translateX(-50%); /* Centre parfait */
     display: flex;
