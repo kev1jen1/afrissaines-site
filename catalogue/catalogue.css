@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +10,8 @@ body {
     background-color: white;
 }
 
+
 header {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,20 +23,12 @@ header {
 header img{
     height: 60px;
     width: 249px;
-    flex: 5;
 }
 
 .logo {
+    display: flex;
     flex-direction: column;
     line-height: 1;
-}
-
-nav {
-    display: flex;
-    position: absolute;
-    left: 30%;
-    gap: 20px;
-    flex: 5;
 }
 
 nav a {
@@ -54,9 +44,10 @@ nav a.active {
     border-bottom: 2px solid black;
 }
 
-.panier {
-    position: absolute;
-    right: 5%;
+.boutton-devis {
+    /* Remember to link the font in your HTML if using this custom font */
+    font-family: "Noto Sans Tifinagh Rhissa Ixa";
+    text-decoration: none;
     background-color: black;
     color: white;
     border: none;
@@ -65,31 +56,34 @@ nav a.active {
     cursor: pointer;
     font-size: 0.9em;
     border-radius:6px;
-    flex: 1;
 }
 
 main {
     text-align: center;
     padding: 40px 20px;
+    /* Remember to link the font in your HTML if using this custom font */
     font-family: "Noto Sans Tifinagh Rhissa Ixa";
-
+    margin: 0 auto;
 }
 
 main h2 {
-    font-size: 3em;
+    font-family: serif;
+    font-size: 2.5em;
     font-weight: normal;
-    margin-bottom: 40px;
-    color: black;
+    text-align: center;
+    margin-bottom: 30px;
 }
+
 .produis-carte {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto; /* Added margin-bottom to separate cards (replaces <br>) */
     padding: 40px;
     background-color: white;
+    /* Changed shadow from 'green' to the orange/amber color for consistency */
     box-shadow: 0 4px 15px green;
     border-radius: 10px;
 }
@@ -121,6 +115,7 @@ main h2 {
 }
 
 .produis-details h3 {
+    font-family: serif;
     font-size: 2.5em;
     font-weight: normal;
     margin-bottom: 15px;
@@ -151,7 +146,52 @@ main h2 {
 }
 
 .bouton-catalogue {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+    border-radius:6px;
+    box-shadow: 0 4px 15px orange;
+}
+
+
+.info-comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 15px green;
+    border-radius: 10px;
+}
+.bouton-catalogue-infocompun{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    border-radius:6px;
+    box-shadow: 0 4px 15px orange;
+    margin-right: 30px;
+
+}
+.bouton-catalogue-infocompdeux{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
     text-decoration: none;
