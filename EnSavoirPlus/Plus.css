@@ -87,11 +87,13 @@ main h2 {
 
 .contenu {
 	margin-top: 100px;
+	text-align: center;
 }
 
 .contenu img{
+	margin-top: 100px;
 	width: 500px; 
-	margin-left: 300px;
+	align-items: center;
 }
 
 .texte {
@@ -100,9 +102,22 @@ main h2 {
 
 .ligne {
 	font-size: 17px;
+	margin-top: 20px;
 }
 
+.bouton-catalogue {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+    border-radius:6px;
+    box-shadow: 0 4px 15px orange;
 
+}
 
 
 
