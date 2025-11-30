@@ -35,7 +35,7 @@ header img{
 nav {
     position: sticky;
     left: 50%;
-    transform: translateX(-50%); /* Centre parfait */
+    transform: translateX(-50%); 
     display: flex;
 }
 
