@@ -35,7 +35,7 @@ header img{
 nav {
     position: sticky;
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%); /* Centre parfait */
     display: flex;
 }
 
@@ -128,18 +128,28 @@ main h2 {
     box-shadow: 0 4px 15px green;
 
 }
-
-.pourquoi {
-	display: flex;
-	margin-bottom: 120px;
+footer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.droite {
-	margin-right:auto;
-	margin-left:100px;
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-.gauche2 {
-	margin-right:100px;
-	margin-left:auto;
+.footer-links a:hover {
+    color: orange;
 }
