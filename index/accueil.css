@@ -12,9 +12,9 @@ body {
     margin: 0;
 }
 
-/* --- Header --- */
+
 header {
-    position: relative;      /* Permet au nav d'être centré indépendamment */
+    position: relative;
     display: flex;
     align-items: center;
     padding: 15px 50px;
@@ -23,14 +23,14 @@ header {
     font-size: 1.1em;
 }
 
-/* Logo collé à gauche */
+
 .logo img {
     height: 60px;
     width: 249px;
     display: block;
 }
 
-/* Nav centré par rapport à son propre centre */
+
 nav {
     position: sticky;
     left: 50%;
@@ -38,7 +38,7 @@ nav {
     display: flex;
 }
 
-/* Liens */
+
 nav a {
     text-decoration: none;
     color: black;
