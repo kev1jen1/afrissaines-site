@@ -3,38 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: white;
+    margin: 0;
 }
 
-
 header {
-    display: flex;
     justify-content: space-between;
+    position: relative;      /* Permet au nav d'être centré indépendamment */
+    display: flex;
     align-items: center;
     padding: 15px 50px;
     border-bottom: 1px solid #eee;
     background-color: #fff;
     font-size: 1.1em;
 }
-header img{
+
+/* Logo collé à gauche */
+.logo img {
     height: 60px;
     width: 249px;
+    display: block;
 }
 
-.logo {
+/* Nav centré par rapport à son propre centre */
+nav {
+    position: absolute; /* Change sticky par absolute */
+    left: 50%;
+    top: 50%; /* Ajout pour centrer verticalement aussi */
+    transform: translate(-50%, -50%); /* Ajustement pour centrage X et Y */
     display: flex;
-    flex-direction: column;
-    line-height: 1;
+
 }
 
+/* Liens */
 nav a {
     text-decoration: none;
     color: black;
-    margin: 0 15px;
+    margin: 0 10px; /* Essaie 8px ou 10px au lieu de 15px */
     padding: 5px 0;
     transition: color 0.3s;
 }
@@ -43,20 +50,23 @@ nav a.active {
     font-weight: bold;
     border-bottom: 2px solid black;
 }
-
-.boutton-devis {
-    /* Remember to link the font in your HTML if using this custom font */
-    font-family: "Noto Sans Tifinagh Rhissa Ixa";
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 0.9em;
-    border-radius:6px;
+.btn-devis {
+    background-color: #000000; /* Fond Noir */
+    color: #ffffff;            /* Texte Blanc */
+    padding: 10px 20px;        /* Espace intérieur pour faire un bouton */
+    border-radius: 5px;        /* Coins légèrement arrondis */
+    text-decoration: none;     /* Pas de soulignement */
+    font-weight: bold;
+    margin-left: 20px;         /* Espace pour le séparer des autres liens */
+    transition: 0.3s;          /* Animation douce */
 }
+
+/* Effet au survol (devient gris foncé) */
+.btn-devis:hover {
+    background-color: #333333;
+    color: #fff;
+}
+
 
 main {
     text-align: center;
@@ -201,4 +211,29 @@ main h2 {
     transition: background-color 0.3s;
     border-radius:6px;
     box-shadow: 0 4px 15px orange;
+}
+footer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: orange;
 }
