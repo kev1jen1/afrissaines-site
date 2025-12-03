@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    justify-content: space-between;
+    position: relative;      /* Permet au nav d'être centré indépendamment */
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    font-size: 1.1em;
+}
+
+/* Logo collé à gauche */
+.logo img {
+    height: 60px;
+    width: 249px;
+    display: block;
+}
+
+/* Nav centré par rapport à son propre centre */
+nav {
+    position: absolute; /* Change sticky par absolute */
+    left: 50%;
+    top: 50%; /* Ajout pour centrer verticalement aussi */
+    transform: translate(-50%, -50%); /* Ajustement pour centrage X et Y */
+    display: flex;
+
+}
+
+/* Liens */
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px; /* Essaie 8px ou 10px au lieu de 15px */
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+.btn-devis {
+    background-color: #000000; /* Fond Noir */
+    color: #ffffff;            /* Texte Blanc */
+    padding: 10px 20px;        /* Espace intérieur pour faire un bouton */
+    border-radius: 5px;        /* Coins légèrement arrondis */
+    text-decoration: none;     /* Pas de soulignement */
+    font-weight: bold;
+    margin-left: 20px;         /* Espace pour le séparer des autres liens */
+    transition: 0.3s;          /* Animation douce */
+}
+
+/* Effet au survol (devient gris foncé) */
+.btn-devis:hover {
+    background-color: #333333;
+    color: #fff;
+}
+
+
+main {
+    text-align: center;
+    padding: 40px 20px;
+    /* Remember to link the font in your HTML if using this custom font */
+    font-family: "Noto Sans Tifinagh Rhissa Ixa";
+    margin: 0 auto;
+}
+
+main h2 {
+    font-family: serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.produis-carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto 50px auto; /* Added margin-bottom to separate cards (replaces <br>) */
+    padding: 40px;
+    background-color: white;
+    /* Changed shadow from 'green' to the orange/amber color for consistency */
+    box-shadow: 0 4px 15px green;
+    border-radius: 10px;
+}
+
+.produis-image {
+    flex-basis: 40%;
+    max-width: 350px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.produis-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.produis-details {
+    flex-basis: 60%;
+    text-align: left;
+}
+
+.produis-type {
+    font-size: 0.9em;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.produis-details h3 {
+    font-family: serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.produis-details ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.produis-details li {
+    font-size: 1em;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.produis-description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.produis-details li::before {
+    content: "●";
+    color: black;
+    font-size: 0.8em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bouton-catalogue {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+    border-radius:6px;
+    box-shadow: 0 4px 15px orange;
+}
+
+
+.info-comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 15px green;
+    border-radius: 10px;
+}
+.bouton-catalogue-infocompun{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    border-radius:6px;
+    box-shadow: 0 4px 15px orange;
+    margin-right: 30px;
+
+}
+.bouton-catalogue-infocompdeux{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+    border-radius:6px;
+    box-shadow: 0 4px 15px orange;
+}
+footer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: orange;
+}

@@ -1,0 +1,202 @@
+/* Fichier: evenements.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --- Style général pour le Header et le Main (à adapter si nécessaire) --- */
+header {
+    position: relative;      /* Permet au nav d'être centré indépendamment */
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    font-size: 1.1em;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo collé à gauche */
+.logo img {
+    height: 60px;
+    width: 249px;
+    display: block;
+}
+
+/* Nav centré par rapport à son propre centre */
+nav {
+    position: sticky;
+    left: 50%;
+    transform: translateX(-50%); /* Centre parfait */
+    display: flex;
+}
+
+/* Liens */
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+
+main {
+    padding: 40px 20px;
+    max-width: 1000px; /* Limiter la largeur comme pour votre catalogue */
+    margin: 0 auto;
+
+}
+
+/* Style du titre H2 "Evenements" */
+main h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* --- Style des cartes d'événements --- */
+
+.evenement-carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 15px green;
+    border-radius: 10px;
+}
+
+.evenement-details {
+    flex-grow: 1;
+}
+
+.evenement-date-heure {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+    /* Le petit point à gauche de la date sur la maquette */
+    position: relative;
+    padding-left: 15px;
+}
+
+.evenement-date-heure::before {
+    content: "•"; /* Utiliser un point ou une petite icône */
+    color: green; /* Couleur du point dans la maquette */
+    font-size: 1.5em;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.evenement-action {
+    box-shadow: 0 4px 15px orange;
+
+}
+.evenement-details h3 {
+    font-size: 1.5em;
+    margin: 0 0 15px 0;
+    font-weight: normal; /* Les titres semblent moins gras sur la maquette */
+}
+
+.evenement-lieu-places {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.evenement-lieu-places .lieu {
+    color: green; /* Le texte Lieu à définir semble vert sur la maquette */
+}
+
+.evenement-lieu-places i {
+    margin-right: 5px;
+    color: #888; /* Couleur des icônes */
+}
+
+/* --- Barre de progression --- */
+.progression-barre {
+    height: 6px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 350px; /* Limiter la longueur de la barre si besoin */
+}
+
+.progression-remplissage {
+    height: 100%;
+    background-color: green;
+    border-radius: 3px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Pour le cas où l'événement est complet */
+.progression-remplissage.complet {
+    background-color: #888; /* Optionnel : changer la couleur si complet */
+}
+
+/* --- Bouton S'inscrire --- */
+.evenement-action {
+    margin-left: 30px;
+}
+.boutonsinscriredesactive:not(.bouton-sinscrire) {
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.2s;
+    box-shadow: none;
+    background-color: #888;
+    cursor: not-allowed;
+}
+.bouton-sinscrire {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 15px orange;
+}
+footer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: orange;
+}
