@@ -126,6 +126,7 @@ main h2 {
     transition: background-color 0.3s;
     border-radius:6px;
     box-shadow: 0 4px 15px green;
+    margin-bottom: 20px;
 
 }
 footer {
@@ -153,3 +154,20 @@ footer {
 .footer-links a:hover {
     color: orange;
 }
+
+.pourquoi {
+	display: flex;
+}
+
+.pair {
+	margin-right: auto;
+	margin-left: 30px;
+}
+
+.impair {
+	margin-right: 30px;
+	margin-left: auto;
+}
+
+
+
